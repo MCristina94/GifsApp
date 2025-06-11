@@ -3,8 +3,9 @@
 </div> -->
 
 <div
-  class="h-screen bg-red-500 overflow-y-scroll grid grid-cols-2 md:grid-cols-4 gap-4 mt-5"
+  class="h-screen overflow-y-scroll grid grid-cols-2 md:grid-cols-4 gap-4 mt-5"
   (scroll)="onScroll($event)"
+  #groupDiv
 >
   <!-- scroll es un evento -->
   @for (group of gifService.trendingGifGroup(); track $index) {
